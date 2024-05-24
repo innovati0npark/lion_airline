@@ -54,7 +54,7 @@ const Profile = () => {
         },
       });
 
-      if (response.status === 200) {
+      if (response.status === 204) {
         toast.success('회원탈퇴가 완료되었습니다.');
         logout();
         navigate('/');
