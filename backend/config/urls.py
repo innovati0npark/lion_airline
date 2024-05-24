@@ -21,4 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup', include('app.urls.signup_urls')),
     path('login', include('app.urls.login_urls')),
+    path('delete/:uid', include('app.urls.delete_urls')),
+    path('flights', include('app.urls.flights_urls')),
+    path('purchase/:ticket', include('app.urls.purchase_urls')),
+    
 ]
